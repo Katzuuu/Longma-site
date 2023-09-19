@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root,
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  @apply text-base cursor-pointer px-6 tracking-wider;
+}
+
+.li-hover {
+  @apply hover:text-orange-400 duration-300 transition-colors h-full flex items-center;
+}
