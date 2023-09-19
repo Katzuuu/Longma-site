@@ -9,6 +9,7 @@ function App() {
       <Nav />
       <Services />
       <Properties />
+      <div>ahoj</div>
     </>
   );
 }
