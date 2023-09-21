@@ -6,6 +6,7 @@
 body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 li {
@@ -13,5 +14,28 @@ li {
 }
 
 .li-hover {
-  @apply hover:text-orange-400 duration-300 transition-colors h-full flex items-center;
+  @apply hover:text-[#4181BA] duration-300 transition-colors h-full flex items-center;
+}
+
+.swiper-pagination {
+  margin-bottom: -55px;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4181ba;
+}
+
+.pricingBox {
+  @apply rounded-lg hover:scale-105 transition-all duration-300 w-[25%] shadow-2xl cursor-pointer;
+}
+
+.pricing-header {
+  @apply text-center text-3xl tracking-wider mt-12 leading-snug;
 }

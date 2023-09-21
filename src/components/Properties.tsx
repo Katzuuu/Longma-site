@@ -26,7 +26,7 @@ const data = [
 
 const Properties = () => {
   return (
-    <div className="h-[65%] w-full flex items-center justify-center flex-col">
+    <div className="h-[65%] w-full flex items-center justify-center flex-col select-none bg-[rgba(229,231,235,0.7)] shadow-xl shadow-gray-200 backdrop-blur-lg relative">
       <h2 className="text-5xl tracking-wider">Prečo práve Longma?</h2>
       <div className="w-[45%] h-[2px] rounded-full bg-black mt-6 mb-20" />
       <div className="flex text-center justify-between w-full max-w-6xl">

@@ -10,7 +10,7 @@ const PropertyItem = ({
 }) => {
   return (
     <div>
-      <div className="w-fit mx-auto mb-6 text-orange-400">
+      <div className="w-fit mx-auto mb-6 text-[#4181BA]">
         <Icon size={45} />
       </div>
       <span className=" max-w-[100px]">{Parser(text)}</span>
