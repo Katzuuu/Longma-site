@@ -11,7 +11,7 @@ const Slide = ({
   header: string;
 }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-8 flex flex-col gap-4">
+    <div className="bg-white rounded-lg h-[355px] shadow-md p-8 flex flex-col gap-4">
       <Icon className="text-[#4181BA]" size={40} />
       <div>
         <h3 className="text-2xl mb-3">{Parser(header)}</h3>

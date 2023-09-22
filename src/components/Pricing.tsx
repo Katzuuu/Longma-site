@@ -1,7 +1,10 @@
-const Pricing = () => {
+const Pricing = ({ pricing }: { pricing: any }) => {
   return (
-    <div className="h-full bg-white flex items-center justify-center select-none">
-      <div className="flex w-full items-center justify-center h-[75%] gap-4">
+    <div
+      ref={pricing}
+      className="h-full bg-white flex items-center justify-center select-none"
+    >
+      <div className="flex w-full items-center justify-center h-[90%] 2xl:h-[75%] gap-4">
         <div className="h-[85%] bg-gray-100 pricingBox">
           <h3 className="pricing-header">Mzdy</h3>
           <div className="px-9 mt-10">

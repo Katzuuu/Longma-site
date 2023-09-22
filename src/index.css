@@ -10,7 +10,7 @@ body {
 }
 
 li {
-  @apply text-base cursor-pointer px-6 tracking-wider;
+  @apply cursor-pointer px-6 tracking-wider;
 }
 
 .li-hover {
@@ -33,7 +33,7 @@ li {
 }
 
 .pricingBox {
-  @apply rounded-lg hover:scale-105 transition-all duration-300 w-[25%] shadow-2xl cursor-pointer;
+  @apply rounded-lg hover:scale-105 transition-all duration-300 w-[30%] 2xl:w-[25%] shadow-2xl cursor-pointer;
 }
 
 .pricing-header {

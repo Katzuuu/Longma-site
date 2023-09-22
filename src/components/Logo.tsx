@@ -1,6 +1,6 @@
 const Logo = () => {
   return (
-    <div className="pl-24">
+    <div className=" pl-6 lg:pl-24">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
