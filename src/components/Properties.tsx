@@ -44,7 +44,7 @@ const Properties = ({ properties }: any) => {
   return (
     <div
       ref={properties}
-      className="h-[65%] w-full flex items-center justify-center flex-col select-none bg-[rgba(229,231,235,0.7)] shadow-xl shadow-gray-200 backdrop-blur-lg relative"
+      className="h-fit p-8 md:h-[65%] w-full flex items-center justify-center flex-col select-none bg-[rgba(229,231,235,0.7)] shadow-xl shadow-gray-200 backdrop-blur-lg relative"
     >
       <div className="overflow-hidden py-2">
         <motion.h2
@@ -52,7 +52,7 @@ const Properties = ({ properties }: any) => {
           initial="hidden"
           animate={controls}
           transition={{ duration: 0.3 }}
-          className="text-5xl tracking-wider"
+          className="md:text-5xl text-2xl tracking-wider"
         >
           Prečo práve Longma?
         </motion.h2>
@@ -70,7 +70,7 @@ const Properties = ({ properties }: any) => {
         animate={controls3}
         transition={{ duration: 0.3, delay: 0.3 }}
         ref={items}
-        className="flex text-center justify-between w-full max-w-6xl"
+        className="flex text-center justify-between w-full max-w-6xl flex-wrap"
       >
         {data.map((item, index) => (
           <PropertyItem key={index} icon={item.icon} text={item.text} />

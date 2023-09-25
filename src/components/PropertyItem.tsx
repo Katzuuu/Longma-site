@@ -9,11 +9,14 @@ const PropertyItem = ({
   text: string;
 }) => {
   return (
-    <div>
-      <div className="w-fit mx-auto mb-6 text-[#4181BA]">
+    <div className="md:w-fit w-1/2 mb-8">
+      <div className="w-fit mx-auto mb-6 text-[#4181BA] md:block hidden">
         <Icon size={45} />
       </div>
-      <span className=" max-w-[100px]">{Parser(text)}</span>
+      <div className="mx-auto w-fit mb-6 text-[#4181BA] md:hidden flex-1">
+        <Icon size={30} />
+      </div>
+      <span className="md:text-base text-sm max-w-[100px]">{Parser(text)}</span>
     </div>
   );
 };

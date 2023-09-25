@@ -1,6 +1,6 @@
 const AboutCompany = () => {
   return (
-    <div className="absolute bottom-12 right-12 text-right">
+    <div className="sm:absolute sm:bottom-12 sm:right-12 text-center sm:text-right">
       <p className="mb-8">
         LONGMA s.r.o.
         <br />

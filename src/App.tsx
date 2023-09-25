@@ -25,7 +25,15 @@ function App() {
         footer={footer}
       />
       <AnimatePresence>
-        {isOpen && <MobileNav setIsOpen={setIsOpen} />}
+        {isOpen && (
+          <MobileNav
+            setIsOpen={setIsOpen}
+            properties={properties}
+            services={services}
+            pricing={pricing}
+            footer={footer}
+          />
+        )}
       </AnimatePresence>
       <ImageSection />
       <Properties properties={properties} />

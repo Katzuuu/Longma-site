@@ -33,7 +33,7 @@ li {
 }
 
 .pricingBox {
-  @apply rounded-lg hover:scale-105 transition-all duration-300 w-[30%] 2xl:w-[25%] shadow-2xl cursor-pointer;
+  @apply xd:rounded-lg xd:hover:scale-105 transition-all duration-300 w-full md:w-[80%] xd:w-[25%] shadow-2xl xd:cursor-pointer;
 }
 
 .pricing-header {
