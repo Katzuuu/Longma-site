@@ -4,7 +4,7 @@ import { BsTelephoneForward } from "react-icons/bs";
 
 const Contact = () => {
   return (
-    <div className=" tracking-wider">
+    <div className="w-fit tracking-wider">
       <div className="flex items-center gap-3 group cursor-pointer mb-1">
         <MdAlternateEmail size={20} />
         <span className="group-hover:underline">dlongauer@gmail.com</span>

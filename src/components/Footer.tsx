@@ -7,7 +7,7 @@ const Footer = ({ footer }: any) => {
   return (
     <footer
       ref={footer}
-      className="relative w-full bg-[#333] text-white/95 h-[60%]"
+      className="relative bg-[#333] text-white/95 h-[60%]"
     >
       <div className="pt-20 pl-20">
         <h2 className="mb-12 text-4xl font-semibold">
