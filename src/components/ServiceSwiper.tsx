@@ -98,15 +98,9 @@ const ServiceSwiper = () => {
         className="2xl:w-[80%] w-full active:cursor-grab overflow-y-visible p-2 mySwiper"
       >
         {sliderData.map((slide, index) => (
-          <React.Fragment key={index}>
-            <SwiperSlide className="2xl:max-w-[450px]">
-              <Slide
-                text={slide.text}
-                icon={slide.icon}
-                header={slide.header}
-              />
-            </SwiperSlide>
-          </React.Fragment>
+          <SwiperSlide key={index} className="2xl:max-w-[450px]">
+            <Slide text={slide.text} icon={slide.icon} header={slide.header} />
+          </SwiperSlide>
         ))}
       </Swiper>
     </>

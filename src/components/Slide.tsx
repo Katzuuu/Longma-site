@@ -1,6 +1,6 @@
 import { IconType } from "react-icons";
 import Parser from "html-react-parser";
-import { BsArrowRightShort } from "react-icons/bs"
+import { BsArrowRightShort } from "react-icons/bs";
 
 const Slide = ({
   icon: Icon,
@@ -17,9 +17,12 @@ const Slide = ({
       <div>
         <h3 className="text-2xl mb-3">{Parser(header)}</h3>
         <ul className="text-sm">
-          {text.map((txt) => (
-            <div className="mb-[2px] relative">
-              <BsArrowRightShort size={20} className="absolute left-0 top-0 text-[#4181BA]" />
+          {text.map((txt, index) => (
+            <div key={index} className="mb-[2px] relative">
+              <BsArrowRightShort
+                size={20}
+                className="absolute left-0 top-0 text-[#4181BA]"
+              />
               <li>{txt}</li>
             </div>
           ))}
