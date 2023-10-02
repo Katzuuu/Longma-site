@@ -9,6 +9,7 @@ import { RiFileList3Line } from "react-icons/ri";
 import { FaRegMoneyBill1 } from "react-icons/fa6";
 import { TbMoneybag } from "react-icons/tb";
 import { HiOutlineOfficeBuilding } from "react-icons/hi";
+import { MdMiscellaneousServices } from "react-icons/md";
 
 // Import Swiper styles
 import "swiper/css";
@@ -17,34 +18,57 @@ import "../index.css";
 
 const sliderData = [
   {
-    text: "Poskytujeme poradenstvo pre začínajúcich podnikateľov. Pomôžeme vám so založením základných obchodných spločností, ale aj zorientovať sa vo veľkom množstve právnych predpisov.",
-    icon: RiFileList3Line,
-    header: "Ekonomické <br /> poradenstvo",
-    id: 5,
-  },
-  {
-    text: "Vedieme pravidelnú mzdovú agendu, spracúvame mesačné výkazy pre štátne inštitúcie. Zabezpečujeme personalistiku, najmä pracovné zmluvy, evidenciu v poisťovniach, výplatné pásky či odborné poradenstvo v mzdovej a personálnej oblasti.",
-    icon: TbMoneybag,
-    header: "Mzdová <br /> evidencia",
-    id: 6,
-  },
-  {
-    text: "Zabezpečujeme vedenie jednoduchého a podvojného účtovníctva a daňovej evidencie. Kontrolujeme správnosť odovzdaných  dokladov, pripravujeme ročné účtovné závierky a pravidelne informujeme klientov o ich účtovnom stave.",
+    text: [
+      "Vedenie účtovníctva pre právnické a fyzické osoby",
+      "Preverenie účtovníctva za minulé obdobia",
+      "Zabezpečenie vykázania účtovnej",
+      "Uzávierky v zmysle IFR",
+      "Spracovanie účtovnej závierky",
+    ],
     icon: HiOutlineOfficeBuilding,
-    header: "Účtovníctvo pre <br /> živnostníkov a firmy",
-    id: 7,
+    header: "Účtovníctvo",
   },
   {
-    text: "Zabezpečujeme vedenie jednoduchého a podvojného účtovníctva a daňovej evidencie. Kontrolujeme správnosť odovzdaných dokladov, pripravujeme ročné účtovné závierky a pravidelne informujeme klientov o ich účtovnom stave.",
+    text: [
+      "Daňové priznanie k DPH podľa §7a",
+      "Daňové priznanie k DPH podľa §4",
+      "Kontrolný výkaz k DPH",
+      "Súhrnný výkaz k DPH",
+      "Daňové priznanie k dani z príjmov",
+    ],
     icon: FaRegMoneyBill1,
-    header: "Daňové <br /> poradenstvo",
-    id: 8,
+    header: "Dane",
   },
   {
-    text: "Zabezpečujeme vedenie jednoduchého a podvojného účtovníctva a daňovej evidencie. Kontrolujeme správnosť odovzdaných dokladov, pripravujeme ročné účtovné závierky a pravidelne informujeme klientov o ich účtovnom stave.",
-    icon: FaRegMoneyBill1,
-    header: "Daňové <br /> poradenstvo",
-    id: 9,
+    text: [
+      "Mzdové účtovníctvo a personalistika",
+      "Registráciu Vašich zamestnancov na príslušných úradoch",
+      "Výpočet miezd zamestnancov a vyhotovenie výplatných pások",
+      "Vykázanie spracovaných miezd na príslušných úradoch",
+      "Komunikácia s úradmi",
+    ],
+    icon: TbMoneybag,
+    header: "Mzdy",
+  },
+  {
+    text: [
+      "Štatistické výkazy",
+      "Podklady na žiadosť o úver",
+      "Vypracovanie účtovných smerníc",
+      "Rekonštrukcia účtovníctva",
+      "Vyhotovenie cestovných príkazov vrátane dokumentácie",
+    ],
+    icon: RiFileList3Line,
+    header: "Administratívne <br />služby",
+  },
+  {
+    text: [
+      "Podnikateľské a účtovné poradenstvo",
+      "Daňové priznanie k dani z príjmov fyzických osôb TYP A",
+      "Daňové priznanie k dani z nehnuteľností",
+    ],
+    icon: MdMiscellaneousServices,
+    header: "Ostatné <br /> služby",
   },
 ];
 
@@ -73,8 +97,8 @@ const ServiceSwiper = () => {
         modules={[Pagination, Mousewheel]}
         className="2xl:w-[80%] w-full active:cursor-grab overflow-y-visible p-2 mySwiper"
       >
-        {sliderData.map((slide) => (
-          <React.Fragment key={slide.id}>
+        {sliderData.map((slide, index) => (
+          <React.Fragment key={index}>
             <SwiperSlide className="2xl:max-w-[450px]">
               <Slide
                 text={slide.text}
