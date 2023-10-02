@@ -10,7 +10,7 @@ const ImageSection = () => {
         animate="show"
         transition={{ duration: 0.5 }}
         className="w-full h-full object-cover fixed top-0 -z-10"
-        src="src/assets/uctovnici.jpg"
+        src="public/uctovnici.jpg"
         alt="team"
       />
     </div>
