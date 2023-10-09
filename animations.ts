@@ -13,6 +13,11 @@ export const slideUp = {
   show: { y: "0%" },
 };
 
+export const slideFromLeft = {
+  hidden: { x: "-100%" },
+  show: { x: "0%" },
+};
+
 export const fadeSlideUp = {
   hidden: { y: "50%", opacity: 0 },
   show: { y: "0%", opacity: 1 },
